@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Aboreto', cursive;
+}
+body{
+    background-color: rgb(120, 76, 232);
+    background-image: linear-gradient(to right, rgb(72, 4, 245) , rgb(179, 148, 228));
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding:0;
+}
+.container-1{
+    display: flex;
+    flex-direction: column;
+    padding: 1px 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    color: #fff;
+    margin-bottom: -20px;
+    margin-top: 20px;
+}
+.container-1 h1{
+    width:100%;
+    height: auto;
+}
+
+img{
+	max-width: 100%;
+    margin-top: 20px;
+}
+.ui-card
+{
+    margin: 20px 10px 10px 10px;
+}
+@media(max-width: 468px)
+{
+    .profile-card
+    {
+        width: 290px;
+        height: 250px;
+    }
+}
+.ui-card{
+	width: 350px;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease-out;
+	background:radial-gradient(#111 50%, #000 100%);
+    box-shadow: 7px 7px 6px 2px rgb(16, 3, 37);
+
+}
+
+.ui-card img{
+	transform: scale(1.3);
+	transition: all 0.3s ease-out;
+}
+.ui-card:hover img{
+	transform: scale(1.1) translateY(-20px); 
+	opacity: 0.3
+}
+.ui-card .description{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 15px;
+    margin-bottom: 20px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+}
+.ui-card .description h3{
+	font-weight: 700;
+	font-size: 32px;
+	margin: 0 0 20px;
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out;
+
+}
+.ui-card .description p{
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out 0.2s;
+}
+.ui-card .description a{
+	color: rgb(2, 2, 2);
+	background:#b69be4;
+	display: inline-block;
+	padding: 10px 25px;
+	border-radius: 5px;
+	text-decoration: none;
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out 0.4s;
+}
+.ui-card .description a:hover{
+	background:#1b0564;
+    color: #fff;
+}
+.ui-card:hover .description h3{
+	opacity: 1;
+	transform: translateY(0px);
+}
+.ui-card:hover .description p{
+	opacity: 1;
+	transform: translateY(0px);
+}
+.ui-card:hover .description a{
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+.main
+{
+    width: 60%;
+    margin:auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+}
+@media(max-width: 768px)
+{
+    .main{
+        width: 100%;
+    }
+}
